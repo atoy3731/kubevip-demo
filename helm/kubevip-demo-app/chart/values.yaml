@@ -5,10 +5,10 @@
 replicaCount: 1
 
 image:
-  repository: harbor.atoy.dev/public/color-site
+  repository: harbor.atoy.dev/public/rgs-demo-app
   pullPolicy: IfNotPresent
   # Overrides the image tag whose default is the chart appVersion.
-  tag: "1.0.1"
+  tag: "1.0"
 
 imagePullSecrets: []
 nameOverride: ""
