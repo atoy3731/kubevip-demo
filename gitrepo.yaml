@@ -13,3 +13,4 @@ spec:
   - "./helm/kubevip"
   - "./helm/kubevip-cloud-provider"
   - "./helm/kubevip-config"
+  - "./helm/kubevip-demo-app"

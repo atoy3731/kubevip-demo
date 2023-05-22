@@ -1,0 +1,13 @@
+defaultNamespace: kubevip-demo-app
+
+labels:
+  app: kubevip-demo-app
+
+helm:
+  chart: ./chart
+  releaseName: kubevip-demo-app
+
+dependsOn:
+- selector:
+    matchLabels:
+      app: kubevip-cloud-provider
