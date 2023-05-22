@@ -4,9 +4,9 @@ metadata:
   name: kubevip
 data:
   {{- if .Values.range.enabled }}
-  range-default: {{ .Values.range.value | quote }}
+  range-global: {{ .Values.range.value | quote }}
   {{- else if .Values.cidr.enabled }}
-  cidr-default: {{ .Values.cidr.value | quote }}
+  cidr-global: {{ .Values.cidr.value | quote }}
   {{- else }}
   {{- fail "Require either range or cidr to be enabled" }}
   {{- end }}
