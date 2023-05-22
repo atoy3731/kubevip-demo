@@ -4,8 +4,7 @@ metadata:
   name: kubevip
   namespace: fleet-default
 spec:
-  repo: ssh://git@git-ssh.atoy.lol/home/kubewarden.git
-  clientSecretName: private-key
+  repo: https://github.com/atoy3731/kubevip-demo.git
   targets:
   - name: kubevip
     clusterGroup: kubevip
