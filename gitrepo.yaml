@@ -1,0 +1,15 @@
+kind: GitRepo
+apiVersion: fleet.cattle.io/v1alpha1
+metadata:
+  name: kubevip
+  namespace: fleet-default
+spec:
+  repo: ssh://git@git-ssh.atoy.lol/home/kubewarden.git
+  clientSecretName: private-key
+  targets:
+  - name: kubevip
+    clusterGroup: kubevip
+  paths:
+  - "./helm/kubevip"
+  - "./helm/kubevip-cloud-provider"
+  - "./helm/kubevip-config"

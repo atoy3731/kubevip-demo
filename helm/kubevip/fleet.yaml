@@ -1,0 +1,10 @@
+defaultNamespace: kube-system
+
+labels:
+  app: kubevip
+
+helm:
+  repo:  https://kube-vip.github.io/helm-charts
+  chart: kube-vip
+  version: 0.4.2
+  releaseName: kubevip

@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: kubevip
+data:
+  {{- if .Values.range.enabled }}
+  range-global: {{ .Values.range.value | quote }}
+  {{- else if .Values.cidr.enabled }}
+  cidr-global: {{ .Values.cidr.value | quote }}
+  {{- else }}
+  {{- fail "Require either range or cidr to be enabled" }}
+  {{- end }}

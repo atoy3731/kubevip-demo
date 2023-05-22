@@ -1,0 +1,6 @@
+range: 
+  enabled: true
+  value: "10.11.0.50-10.11.0.70"
+cidr: 
+  enabled: false
+  value: "10.11.0.48/28"
