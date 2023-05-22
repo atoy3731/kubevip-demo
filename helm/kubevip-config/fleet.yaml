@@ -6,8 +6,3 @@ labels:
 helm:
   chart: ./chart
   releaseName: kubevip-config
-
-# dependsOn:
-# - selector:
-#     matchLabels:
-#       app: kubevip-cloud-provider
