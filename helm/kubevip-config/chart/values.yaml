@@ -1,6 +1,6 @@
 range: 
   enabled: true
-  value: "10.11.0.50-10.11.0.70"
+  value: "10.11.0.70-10.11.0.80"
 cidr: 
   enabled: false
-  value: "10.11.0.48/28"
+  value: "10.11.0.50/28"

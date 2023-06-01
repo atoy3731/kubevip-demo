@@ -10,7 +10,7 @@ helm:
   releaseName: kubevip
   values:
     config:
-      address: "10.11.0.80"
+      address: "10.11.0.50"
     env:
       vip_interface: "eth0"
       cp_enable: "true"

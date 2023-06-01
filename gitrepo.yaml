@@ -5,7 +5,7 @@ metadata:
   namespace: fleet-default
 spec:
   repo: https://github.com/atoy3731/kubevip-demo.git
-  branch: main
+  branch: turing
   targets:
   - name: kubevip
     clusterGroup: kubevip
